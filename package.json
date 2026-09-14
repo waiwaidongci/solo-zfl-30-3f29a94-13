@@ -1,0 +1,16 @@
+{
+  "name": "mingwen-tai",
+  "version": "1.0.0",
+  "description": "离线铭文转录与校勘台：按载体/版面/行/字位录入，逐字校勘、批注锚定与字形索引",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node tools/server.mjs",
+    "test": "node --test tests/",
+    "test:browser": "playwright test --config=playwright.config.js",
+    "test:all": "node --test tests/ && playwright test --config=playwright.config.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}
